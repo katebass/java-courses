@@ -1,15 +1,18 @@
 package com.company;
 
 /*
-    Module 1
+    Class Main
+    Modules: all
+
     Copyright --- Kateryna Basova KNHUE
 */
-
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        // create an instance of the class Cube
+        Cube cube1 = new Cube(5);
+        // call one of methods for class instance
+        cube1.toConsole();
     }
 }
