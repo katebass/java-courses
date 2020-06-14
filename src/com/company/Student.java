@@ -17,39 +17,39 @@ import java.time.LocalDate;
 
 public class Student {
     // properties for class Student
-    private String firstName;
-    private String lastName;
-    private String patronymic;
-    private LocalDate birthday;
-    private Speciality speciality;
-    private Gender gender;
-    private String faculty;
-    private String groupNumber;
-    private String curator;
-    private String pasportSeries;
-    private int pasportNumber;
-    private int identificationNumber;
-    private int course;
-    private String academicDegree;
-    private String sportSection;
-    private Float averageMark;
-    private String citizenship;
-    private boolean isContractor;
-    private boolean isUnionist;
-    private boolean hasScholarship;
-    private boolean hasSocialBenefit;
-    private String previousEducation;
-    private String registrationCity;
-    private String registrationAddress;
-    private int postIndex;
-    private String characteristics;
-    private boolean isFullTimeEducation;
-    private boolean isDutyBound;
-    private String motherName;
-    private String motherPhone;
-    private String fatherName;
-    private String fatherPhone;
-    private String bankDetails;
+    private String firstName; // student's first name
+    private String lastName; // student's last name
+    private String patronymic; // student's patronymic
+    private LocalDate birthday; // student's birthday
+    private Speciality speciality; // speciality on which a student is studying
+    private Gender gender; // student's gender
+    private String faculty; // faculty on which a student is studying
+    private String groupNumber; // group number in which a student is studying
+    private String curator; // curator of a student's group
+    private String pasportSeries; // student's pasport series
+    private int pasportNumber; // student's pasport number
+    private int identificationNumber; // student's identification number
+    private int course; // number of course on which a student is studying
+    private String academicDegree; //  academic degree which a student is gaining
+    private String sportSection; // student's sport section
+    private Float averageMark; // student's average mark for final subjects
+    private String citizenship; // student's citizenship
+    private boolean isContractor; // a check if student is a contractor
+    private boolean isUnionist; // a check if student is unionist
+    private boolean hasScholarship; // a check if student has scholarship
+    private boolean hasSocialBenefit; // a check if student has social benefit
+    private String previousEducation; // student's previous education
+    private String registrationCity; // student's city of registration
+    private String registrationAddress; // student's address of registration
+    private int postIndex; // student's post index
+    private String characteristics; // student's characteristics
+    private boolean isFullTimeEducation; // a check if student is studying full-time or part-time
+    private boolean isDutyBound; // a check if student is duty bound
+    private String motherName; // student's mother name
+    private String motherPhone; // student's mother phone
+    private String fatherName; // student's father name
+    private String fatherPhone; // student's father phone
+    private String bankDetails; // student's bank details
 
     /**
      * Class constructor without parameters
@@ -66,8 +66,8 @@ public class Student {
      * @param speciality speciality on which a student is studying
      * @param gender student's gender
      * @param faculty faculty on which a student is studying
-     * @param groupNumber groupNumber in which a student is studying
-     * @param curator curator of a student group
+     * @param groupNumber group number in which a student is studying
+     * @param curator curator of a student's group
      * @param pasportSeries student's pasport series
      * @param pasportNumber student's pasport number
      * @param identificationNumber student's identification number
