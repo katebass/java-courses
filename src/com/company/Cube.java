@@ -1,8 +1,10 @@
 package com.company;
 
-/*
-    Copyright: Kateryna Basova KNHUE
+import java.util.Objects;
 
+/**
+    @author Kateryna Basova KNHUE
+    @varsion 1.0
     Classname: Cube
 
     Module 2 Task 1. Java class creation
@@ -23,10 +25,7 @@ package com.company;
     Class Cube implements interfaces methods:
         Interface IPackaging methods: toString(), toJSON(), toXML() toConsole();
         Interface IGeometry methods: getVolume(), getPerimeter().
-*/
-
-import java.util.Objects;
-
+**/
 public class Cube implements IPackaging, IGeometry{
 
     private double sideLength;

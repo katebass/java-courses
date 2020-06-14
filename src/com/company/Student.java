@@ -2,24 +2,21 @@ package com.company;
 
 import java.time.LocalDate;
 
-/*
-    Copyright: Kateryna Basova KNHUE
-
-    Classname: Cube
+/**
+ * @author Kateryna Basova KNHUE
+ * @version 1.0
+ * Classname Student
+ * Class represents a person who is studying at university
 
     Module 2 Task 4. Programming patterns. Factory, Builder.
 
     Task description:
     3. Create a class Student.
     4. Create a builder for the class Student
+ **/
 
-*/
-
-/*
-    Class Student: represents a person who is trudying at university
-*/
 public class Student {
-
+    // properties for class Student
     private String firstName;
     private String lastName;
     private String patronymic;
@@ -54,9 +51,48 @@ public class Student {
     private String fatherPhone;
     private String bankDetails;
 
+    /**
+     * Class constructor without parameters
+     */
     public Student() {
     }
 
+    /**
+     * Class constructor with parameters
+     * @param firstName student's first name
+     * @param lastName student's last name
+     * @param patronymic student's patronymic
+     * @param birthday student's birthday
+     * @param speciality speciality on which a student is studying
+     * @param gender student's gender
+     * @param faculty faculty on which a student is studying
+     * @param groupNumber groupNumber in which a student is studying
+     * @param curator curator of a student group
+     * @param pasportSeries student's pasport series
+     * @param pasportNumber student's pasport number
+     * @param identificationNumber student's identification number
+     * @param course number of course on which a student is studying
+     * @param academicDegree academic degree which a student is gaining
+     * @param sportSection student's sport section
+     * @param averageMark student's average mark for final subjects
+     * @param citizenship student's citizenship
+     * @param isContractor a check if student is a contractor
+     * @param isUnionist a check if student is unionist
+     * @param hasScholarship a check if student has scholarship
+     * @param hasSocialBenefit a check if student has social benefit
+     * @param previousEducation student's previous education
+     * @param registrationCity student's city of registration
+     * @param registrationAddress student's address of registration
+     * @param postIndex student's post index
+     * @param characteristics student's characteristics
+     * @param isFullTimeEducation a check if student is studying full-time or part-time
+     * @param isDutyBound a check if student is duty bound
+     * @param motherName student's mother name
+     * @param motherPhone student's mother phone
+     * @param fatherName student's father name
+     * @param fatherPhone student's father phone
+     * @param bankDetails student's bank details
+     */
     public Student(String firstName, String lastName, String patronymic, LocalDate birthday, Speciality speciality,
                    Gender gender, String faculty, String groupNumber, String curator, String pasportSeries,
                    int pasportNumber, int identificationNumber, int course, String academicDegree, String sportSection,
@@ -101,6 +137,7 @@ public class Student {
         this.bankDetails = bankDetails;
     }
 
+    // getters and setters
     public String getFirstName() {
         return firstName;
     }
@@ -365,7 +402,9 @@ public class Student {
         this.bankDetails = bankDetails;
     }
 
-    // Class Builder, represents the programming pattern 'Builder' for class Student
+    /**
+     * Class Builder, represents the programming pattern 'Builder' for class Student
+     */
     public static class Builder {
         private Student studentToBuild;
 
@@ -374,8 +413,11 @@ public class Student {
             this.studentToBuild = new Student();
         }
 
-        // method for programming pattern Builder, which creates a class instance Student
-        // similar to another provided Student instance
+        /**
+         * creates a class instance Student similar to another provided Student instance
+         * @param student object, which info will be taken for creation similar student
+         * @return class instance Builder
+         */
         public Builder setSimilarTo(Student student) {
             this.studentToBuild.firstName = student.firstName;
             this.studentToBuild.lastName = student.lastName;
@@ -580,6 +622,9 @@ public class Student {
             return this;
         }
 
+        /**
+         * @return a built Student class instance
+         */
         public Student build(){
             return studentToBuild;
         }
