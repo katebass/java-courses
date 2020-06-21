@@ -17,7 +17,7 @@ public class CubeFactory {
      * @param sideLength set a side of a cube
      **/
     public static Cube create(double sideLength) {
-        if (sideLength > 0) {
+        if (sideLength < 0) {
             return new Cube(sideLength);
         } return null;
     }
