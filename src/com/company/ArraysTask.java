@@ -6,7 +6,8 @@ import java.nio.file.Paths;
 import java.util.Arrays;
 
 /*
-    Copyright: Kateryna Basova KNHUE
+    * @author Kateryna Basova KHNUE
+    * @version 06 of June 2020
 
     Classname: ArraysTask
 
